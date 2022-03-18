@@ -189,10 +189,61 @@ var b = {
  * Benito    =>   No        Si
  * Andrés    =>   Si        No
  * Carlos    =>   No        Si
- * Darío     =>    ?        ?
- * Tomás     =>   
+ * Darío     =>   Si        No
+ * Tomás     =>   No        Si 
+ * 
+ * Tomás llega a su destino en coche
  * 
  */
+
+var p  ={
+
+    //Supongamos que '0' es avión y '1' es coche
+    Alejandro:0,
+    Benito:0,
+    Andres:0,
+    Carlos:0,
+    Dario:0,
+    Tomás:0,
+
+    resultado: function(){
+        if(
+            p.Alejandro == p.Benito &&
+            p.Benito != 0 &&
+            p.Andres == 0 &&
+            p.Carlos != p.Dario &&
+            p.Carlos == 1 &&
+            p.Andres == p.Tomás
+        ){
+            return true;
+        }
+        else{
+            return false;
+        }
+    },
+
+    intervalo: setInterval(function() {
+        
+        p.Alejandro = Math.floor(Math.random() * 2);
+        p.Benito = Math.floor(Math.random() * 2);
+        p.Andres = Math.floor(Math.random() * 2);
+        p.Carlos = Math.floor(Math.random() * 2);
+        p.Dario = Math.floor(Math.random() * 2);
+        p.Tomás = Math.floor(Math.random() * 2);
+
+        if(p.resultado()){
+            clearInterval(p.intervalo);
+            console.log("Alejandro", p.Alejandro);
+            console.log("Benito", p.Benito);
+            console.log("Andres", p.Andres);
+            console.log("Carlos", p.Carlos);
+            console.log("Dario", p.Dario);
+            console.log("Tomas", p.Tomás);
+        }
+
+    }, 10)
+
+}
 
 /**
  * CASO 5. SILENCIO
