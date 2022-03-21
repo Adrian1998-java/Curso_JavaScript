@@ -52,7 +52,7 @@ var a = {
             console.log("Atleta C", a.C);
             console.log("Atleta D", a.D);
         }
-    }, 10)
+    }, 1000)
 
 }
 
@@ -286,7 +286,7 @@ var p  ={
             console.log("Rosa", f.Rosa);
             console.log("Celia", f.Celia);
         }
-    }, 10)
+    }, 500)
 
 }
 
