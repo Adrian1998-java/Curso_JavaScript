@@ -68,6 +68,16 @@ header nav ul li a{
 	color:white;
 }
 
+header #btnMovil span{
+	width:40px;
+	height:40px;
+	text-align: center;
+	padding:10px 0;
+	margin:10px;
+	background:silver;
+	cursor: pointer;
+}
+
 /*=============================================
 SLIDESHOW
 =============================================*/
@@ -258,6 +268,71 @@ EFECTO DE SCROLL
 	padding:10px 20px;
 	cursor:pointer;
 }
+
+/*=============================================
+FORMULARIO
+=============================================*/
+
+#formulario{
+	background: white;
+}
+
+#formulario form{
+	position:relative;
+	margin:auto;
+	width:70%;
+	height:auto;
+	padding:2%;
+	background:#ddd;
+}
+
+#formulario form h1{
+	width:100%;
+	line-height:50px;
+	background:black;
+	text-align:center;
+	font-size:20px;
+	color:white;
+}
+
+#formulario input, #formulario label, #formulario textarea, #formulario p, #formulario select{
+	display:block;
+	position:relative;
+	width:100%;
+	padding:10px;
+	font-size: 14px;
+}
+
+#formulario label span.obligatorio{
+	opacity: 0;
+	color:#777;
+}
+
+#formulario input[type="checkbox"], #formulario input[type="radio"]{
+	display:none;	
+}
+
+#formulario label.box span, #formulario label.radio span{
+	display:inline-block;
+	width:25px;
+	height:25px;
+	background:white;
+	vertical-align:middle;
+	margin-right:10px;
+}
+
+#formulario label.radio span{	
+	border-radius:100%;
+}
+
+#formulario input[type="checkbox"]:checked + label.box span{
+	background: url(../img/box.jpg);
+}
+
+#formulario input[type="radio"]:checked + label.radio span{
+	background: url(../img/radio.jpg);
+}  
+
 
 
 /*=============================================
