@@ -3,6 +3,8 @@
 
 ## Temas o Apartados realizados:
 
+-01. Bienvenido al curso
+
 -02. Fundamentos de JavaScript
 
 -03. Programación Orientada a Objetos (POO)
