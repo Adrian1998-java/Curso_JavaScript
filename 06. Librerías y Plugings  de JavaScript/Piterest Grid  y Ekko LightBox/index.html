@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+      CSS
+     -->
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!-- jdSlider -->
+	<link rel="stylesheet" href="css/plugins/jdSlider.css">
+
+	<!-- Pinterest Grid -->
+	<link rel="stylesheet" href="css/plugins/pinterest_grid.css">
+	
+	<!-- Ekko Lightbox -->
+	<link rel="stylesheet" href="css/plugins/ekko_lightbox.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+<!-- 
+  JS
+ -->
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!-- jdSlider -->
+<!-- https://www.jqueryscript.net/slider/Carousel-Slideshow-jdSlider.html -->
+<script src="js/plugins/jdSlider.js"></script>
+
+<!-- Pinterest Grid -->
+<!-- https://www.jqueryscript.net/layout/Simple-jQuery-Plugin-To-Create-Pinterest-Style-Grid-Layout-Pinterest-Grid.html -->
+<script src="js/plugins/pinterest_grid.js"></script>
+
+<!-- Ekko Lightbox -->	
+<!-- https://ashleydw.github.io/lightbox/ -->
+<script src="js/plugins/ekko_lightbox.js"></script>
+
+
+
+</head>
+<body>
+    
+    <!--
+        HEADER
+    -->
+
+    <header class="container-fluid bg-light">
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light container">
+
+			<a class="navbar-brand text-center" href="#">
+				
+				<img src="img/logotipo.png" style="width:150px;">
+
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+
+			</div>
+		</nav>
+	</header>
+
+    <!--
+        SLIDESHOW
+    -->
+
+    <div class="container-fluid p-0">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/slide/slide01.jpg"class="img-fluid">
+                <div class="carousel-caption">
+                    <h3>Hola</h3>
+                    <p>Estoy aprendiendo Bootstrap 4</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide/slide02.jpg"class="img-fluid" >
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide/slide03.jpg" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide/slide04.jpg" class="img-fluid">
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+    </div>
+
+    <!--
+        GALERIA
+    -->
+    <div class="container-fluid p-0">
+
+      <h2 class="text_uppercase py-3 text-muted text-center">Galería de imagenes</h2>
+      <section class="pinterest_grid">
+
+        <article class="white-panel">
+          <a href="img/galeria/01.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+          <img src="img/galeria/01.jpg"> </a>
+        </article>
+
+        <article class="white-panel"><a href="img/galeria/02.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+          <img src="img/galeria/02.jpg"> </a>
+        </article>
+
+        <article class="white-panel"> <a href="img/galeria/03.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+          <img src="img/galeria/03.jpg"> </a>
+        </article>
+
+        <article class="white-panel"> <a href="img/galeria/04.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+          <img src="img/galeria/04.jpg"> </a>
+        </article>
+
+        <article class="white-panel"> <a href="img/galeria/05.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+          <img src="img/galeria/05.jpg"> </a>
+        </article>
+
+        <article class="white-panel"> <a href="img/galeria/06.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+          <img src="img/galeria/06.jpg"> </a>
+        </article>
+
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
