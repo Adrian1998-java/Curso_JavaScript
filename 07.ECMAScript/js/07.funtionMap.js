@@ -1,7 +1,7 @@
 console.log("## MAP() ##")
 
 /*
-    FUNCION MAP(): 
+    FUNCION MAP(): Recorre cada elemento del Array y retorna modificaciones que le queramos al array inicial
 */
 
 let deportes = [
@@ -18,15 +18,21 @@ let deportes = [
         nivel: "Avanzado"
     }
 ]
+deportes.map((deporte, index)=> {
 
-let agregarLugar = deportes.map(deporte => {
+    if(index === 1){
+        deporte.lugar = "Estadio"; 
+    }
 
-    deporte.lugar = "Estadio";
+    if(index === 2){
+        deporte.nivel = "Básico"; 
+    }
+   
 
     return deporte;
 });
 
-console.log("agregarLugar", agregarLugar);
+console.log("Deportes", deportes);
 
 
 

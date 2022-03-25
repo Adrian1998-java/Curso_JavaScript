@@ -13,4 +13,8 @@
 
 -04. Recursos Interactivos con JS y POO
 
+-05. HTML Canvas
+
+-06. Librearías y Plugins de JavaScript 
+
 -07. ECMAScript (Incompleto)
