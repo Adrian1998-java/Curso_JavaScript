@@ -19,4 +19,8 @@
 
 -07. ECMAScript 
 
--08. TypeScript (En proceso)
+-08. TypeScript 
+
+## Consejos útiles:
+
+-En el caso de TypeScript, con la cmd y situado en la carpeta donde tengas el .ts , utiliza el comando "tsc {Nombre.ts}" para convertilo en .js
