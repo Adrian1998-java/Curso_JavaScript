@@ -17,4 +17,6 @@
 
 -06. Librearías y Plugins de JavaScript 
 
--07. ECMAScript (Incompleto)
+-07. ECMAScript 
+
+-08. TypeScript (En proceso)
